@@ -1,0 +1,7 @@
+<Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Width="256" Height="256">
+ <Canvas Width="256" Height="256">
+  <Border Canvas.Left="8" Canvas.Top="8" Width="240" Height="240" Background="#101318" CornerRadius="52"/>
+  <Border Canvas.Left="76" Canvas.Top="91" Width="30" Height="104" Background="#9FD5FD" CornerRadius="15"/>
+  <Border Canvas.Left="132" Canvas.Top="61" Width="30" Height="104" Background="#AEC1FF" CornerRadius="15"/>
+ </Canvas>
+</Viewbox>

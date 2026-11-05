@@ -1,0 +1,12 @@
+{
+  "name": "midnitefox-govee",
+  "interface": { "displayName": "MIDNITEFOX · Govee Lights" },
+  "plugins": [
+    {
+      "name": "govee-lights",
+      "source": { "source": "local", "path": "./plugins/govee-lights" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Productivity"
+    }
+  ]
+}

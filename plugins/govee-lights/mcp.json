@@ -1,0 +1,11 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "govee-lights": {
+      "type": "stdio",
+      "command": "${PLUGIN_ROOT}/server/Govee Lights MCP.exe",
+      "args": [],
+      "cwd": "${PLUGIN_ROOT}"
+    }
+  }
+}

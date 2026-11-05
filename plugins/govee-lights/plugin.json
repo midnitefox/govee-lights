@@ -1,0 +1,32 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "govee-lights",
+  "version": "1.0.0",
+  "description": "Control selected Govee lights locally and send temporary task-completion, attention, error, and information signals.",
+  "author": { "name": "midnitefox" },
+  "homepage": "https://github.com/midnitefox/govee-lights",
+  "repository": "https://github.com/midnitefox/govee-lights",
+  "license": "MIT",
+  "keywords": ["lights", "notifications", "govee", "windows"],
+  "extensions": {
+    "com.openai": {
+      "requires_local_executor": true,
+      "onboardingSkill": "./skills/setup/SKILL.md",
+      "interface": {
+        "displayName": "Govee Lights",
+        "shortDescription": "Local light controls and AI task signals",
+        "longDescription": "Connect to the Govee Lights Windows app. Control permitted lights and presets, or send a brief signal that restores lighting and resumes screen sync afterward. Requires a local Windows desktop chat.",
+        "developerName": "midnitefox",
+        "category": "Productivity",
+        "capabilities": ["Read", "Write"],
+        "brandColor": "#9FD5FD",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png",
+        "defaultPrompt": [
+          "Use Govee Lights to signal when this task finishes or needs my attention.",
+          "Use Govee Lights to show my available lights and lighting presets."
+        ]
+      }
+    }
+  }
+}
